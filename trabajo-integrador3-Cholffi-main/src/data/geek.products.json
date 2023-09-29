@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbf4"
+  },
+  "name": "Set de Destornilladores de Precisión",
+  "description": "Un conjunto de destornilladores de precisión con diversas puntas para reparar teléfonos celulares y computadoras.",
+  "category": "Herramientas",
+  "price": 11200.8,
+  "image": "set_destornilladores.jpg",
+  "discount": "15"
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbf5"
+  },
+  "name": "Correa de Muñeca Antiestática",
+  "description": "Una correa de muñeca antiestática para evitar descargas electrostáticas durante las reparaciones electrónicas.",
+  "category": "Herramientas",
+  "price": 4678.8,
+  "image": "correa_antiestatica.jpeg"
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbf6"
+  },
+  "name": "Pistola de Calor",
+  "description": "Una pistola de calor para soldar y desoldar componentes electrónicos en placas de PC y smartphones.",
+  "category": "Herramientas",
+  "price": 17146.8,
+  "image": "pistola_calor.jpg"
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbf7"
+  },
+  "name": "Set de Herramientas Spudger",
+  "description": "Un conjunto de herramientas spudger para abrir dispositivos y trabajar con componentes delicados.",
+  "category": "Herramientas",
+  "price": 6742.8,
+  "image": "set_spudger.jpg"
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbf8"
+  },
+  "name": "Kit de Soldadura",
+  "description": "Un kit de soldadura con diferentes puntas y alambre de soldar para trabajos de soldadura en dispositivos electrónicos.",
+  "category": "Herramientas",
+  "image": "kit_soldadura.jpg",
+  "price": 15594.8
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbf9"
+  },
+  "name": "Set de Herramientas de Apertura",
+  "description": "Un conjunto de herramientas de apertura para abrir smartphones y PCs sin dañar la carcasa.",
+  "category": "Herramientas",
+  "image": "set_herramientas_apertura.jpg",
+  "price": 5194.8
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbfa"
+  },
+  "name": "Cepillo de Limpieza ESD",
+  "description": "Un cepillo de limpieza ESD para eliminar el polvo y la suciedad de componentes electrónicos y PCBs.",
+  "category": "Limpieza",
+  "image": "cepillo_limpieza.jpg",
+  "price": 3631.8
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbfb"
+  },
+  "name": "Paño de Limpieza de Microfibra",
+  "description": "Un paño de limpieza de microfibra para limpiar pantallas y superficies de smartphones y PCs.",
+  "category": "Limpieza",
+  "image": "pano_limpieza.jpg",
+  "price": 2075.8
+},
+{
+  "_id": {
+    "$oid": "64c2ff84c65112305843fbfc"
+  },
+  "name": "Cepillo de Limpieza Antiestático",
+  "description": "Un cepillo de limpieza antiestático para eliminar el polvo y lose componentes electrónicos.",
+  "category": "Limpieza",
+  "price": 3117.8,
+  "image": "cepillo_antiestatico.jpg"
+},
+{
+  "_id": {
+    "$oid": "64dd6adc58c868a281564f8a"
+  },
+  "name": "poster",
+  "description": "poster del dia",
+  "category": "cuadros",
+  "price": 30,
+  "image": "img-1692232412291.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64deba4d95ebcd62e2283d07"
+  },
+  "name": "hola1",
+  "description": "poster del dia",
+  "category": "memes",
+  "price": 302,
+  "image": "",
+  "createdAt": {
+    "$date": "2023-08-18T00:24:45.173Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-18T00:24:45.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ded9b531479d5798839be7"
+  },
+  "name": "hola12",
+  "description": "poster del dia",
+  "category": "memes",
+  "price": 302,
+  "image": "",
+  "createdAt": {
+    "$date": "2023-08-18T02:38:45.546Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-18T02:38:45.546Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65164e03a921fe5e2932a533"
+  },
+  "name": "Llavero de Pc",
+  "description": "un llavero que dan ganas de tener con forma de pc",
+  "category": "bolucompra",
+  "price": 2500,
+  "discount": 11,
+  "image": "images-1695960579593.jpg",
+  "createdAt": {
+    "$date": "2023-09-29T04:09:39.615Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-29T04:09:39.615Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6516531100edaab5d8ce267a"
+  },
+  "name": "qwqwqwe",
+  "description": "prueba de carga de datos a la api",
+  "category": "bolucompra",
+  "price": 123123,
+  "discount": 15,
+  "image": "images-1695961873994.jpg",
+  "createdAt": {
+    "$date": "2023-09-29T04:31:13.997Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-29T04:31:13.997Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6516541000edaab5d8ce267c"
+  },
+  "name": "poster perro",
+  "description": "prueba de carga de datos a la api 3",
+  "category": "bolucompra",
+  "price": 1111,
+  "discount": 17,
+  "image": "images-1695962128731.jpg",
+  "createdAt": {
+    "$date": "2023-09-29T04:35:28.735Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-29T04:35:28.735Z"
+  },
+  "__v": 0
+}]
