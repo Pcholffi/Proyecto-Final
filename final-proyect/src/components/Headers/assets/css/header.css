@@ -1,0 +1,103 @@
+.barra {
+    background-color: #F7F7F7; /* Fondo gris claro */
+    border-bottom: 1px solid #ddd; /* Borde inferior gris */
+    padding: 10px 0; /* Espaciado interno */
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Altura máxima del logo */
+    flex-shrink: 0; /* Evitar que el logo se estire */
+}
+
+
+.navbar2 nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333; /* Color del texto de navegación (gris oscuro) */
+}
+
+.navbar2 nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333; /* Color del texto de navegación (gris oscuro) */
+    transition: color 0.3s, font-size 0.3s; /* Transiciones de color y tamaño de fuente */
+}
+
+.navbar2 nav a:hover {
+    color: #4caf50; /* Color verde cuando se pasa el mouse */
+    font-size: 18px; /* Tamaño de fuente aumentado cuando se pasa el mouse */
+}
+
+
+.buscador {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.input-buscar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+    transition: box-shadow 1.3s; /* Agregando la transición a la sombra */
+}
+
+.input-buscar:focus {
+    box-shadow: 0 0 10px rgb(30, 10, 214); /* cambio la sombra cuando se enfoca el input */
+    border: 2px solid #111111; /* cambio el color del borde cuando se enfoca el input */
+}
+
+.btn-buscar {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-buscar:hover {
+    background-color: #333;
+    transform: scale(1.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/*--------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Left li {
+    margin-right: 10px; /* Espacio entre elementos */
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right li {
+    margin-left: 10px; /* Espacio entre elementos */
+  }
+  
