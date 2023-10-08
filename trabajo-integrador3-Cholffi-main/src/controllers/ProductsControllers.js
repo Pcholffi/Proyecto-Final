@@ -19,7 +19,11 @@ const controller = {
   },
   detalle: async (req, res) => {
     const productId = req.params.id;
+<<<<<<< HEAD
     const product = await Product.findById({ _id: productId });
+=======
+    const product = await Product.findById({_id : productId});
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
     if (!product) {
       return res.status(404).json({ msg: 'Producto no encontrado.' });
     }
@@ -33,8 +37,13 @@ const controller = {
         discount: req.body.discount,
         category: req.body.category,
         description: req.body.description,
+<<<<<<< HEAD
         image: req.file ? req.file.filename : '',
 
+=======
+        image: req.file? req.file.filename : '',
+    
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
       };
 
       const productDatabase = await Product.create(product); // Utiliza el modelo para crear un nuevo producto en la base de datos
@@ -63,6 +72,7 @@ const controller = {
     }
   },
 
+<<<<<<< HEAD
   eliminar: async (req, res) => {
     try {
         const productId = req.params.id;
@@ -89,6 +99,30 @@ const controller = {
     const product = await Product.find({ "name": { $regex: req.query.name, $options: "i" } });
     res.json(product);
   }
+=======
+  eliminar: (req, res) => {
+    const productId = parseInt(req.params.id);
+    const productIndex = products.findIndex((producto) => producto.id === productId);
+    if (productIndex === -1) {
+      return res.status(404).json({ msg: 'Producto no encontrado. Verifique el Id Ingresado' });
+    }
+
+    const productoEliminado = products.splice(productIndex, 1);
+    let productsJson = JSON.stringify(products, null, 4);
+    fs.writeFileSync(ruta, productsJson, { encoding: 'utf-8' });
+    const response = { msg: `Producto con ID ${productId} eliminado exitosamente.`, producto: productoEliminado[0] };
+    res.json(response);
+  },
+  
+  buscar: async (req, res) => {
+
+    if(!req.query.name) {
+        return res.status(404).json({ message: "Producto no encontrado"}) ;
+    }
+        const product = await Product.find({ "name": { $regex: req.query.name, $options: "i" } });
+        res.json(product);
+    }
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
 }
 
 module.exports = controller;

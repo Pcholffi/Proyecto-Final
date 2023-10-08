@@ -9,7 +9,11 @@ const Main = () => {
     fetch('http://localhost:3003/products/listar')
         .then(res => res.json())
         .then(products => {
+<<<<<<< HEAD
           //console.log(products);
+=======
+          console.log(products);
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
             setProducts(products);
             
         })

@@ -2,7 +2,11 @@
 const path = require('path');//modulo nativo
 const express = require('express');//modulo de tercero
 const app = express();
+<<<<<<< HEAD
 const cors = require('cors');
+=======
+const cors = require ('cors');
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
 const products = require('./routes/productsRouters');
 const connectDb = require('./database/connect');
 /*-------ACORDATE DE PONER LOS PUNTOS Y COMA ;;;;-----*/

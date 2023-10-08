@@ -1,13 +1,21 @@
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { useParams, Link } from "react-router-dom";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+=======
+import { useParams } from "react-router-dom";
+
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
 
 const Detail = () => {
   const [product, setProduct] = useState({});
   const { id } = useParams();
 
+<<<<<<< HEAD
   const history = useHistory();
 
+=======
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
   const getProduct = async (id) => {
     try {
       const response = await fetch(`http://localhost:3003/products/detalle/${id}`)
@@ -17,15 +25,19 @@ const Detail = () => {
       }
 
       const product = await response.json()
+<<<<<<< HEAD
       
       if (product.image === '') {
         product.image = 'imgDefault.jpg';
       }
 
+=======
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
       setProduct(product)
     } catch (error) {
       console.error("Error al obtener el producto:", error.message)
     }
+<<<<<<< HEAD
   };
 
 
@@ -48,6 +60,9 @@ const Detail = () => {
   };
 
 
+=======
+  }
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
 
   useEffect(() => {
     getProduct(id)
@@ -77,7 +92,11 @@ const Detail = () => {
       </div>
       <div className="row mt-4">
         <div className="col-12 col-lg-8">
+<<<<<<< HEAD
           {/*aca tengo que colocar el puntaje que tiene la herrameinta*/}
+=======
+{/*aca tengo que colocar el puntaje que tiene la herrameinta*/}
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
           <p className="mt-3">{product.category} Pasa solucines rapidas</p>
         </div>
         <div className="col-12 col-lg-4">
@@ -101,6 +120,7 @@ const Detail = () => {
               COMPRAR AHORA
             </a>
             <hr />
+<<<<<<< HEAD
             <Link to={`/editar/${id}`}
               className="btn btn-secondary btn-block mb-3"
             >
@@ -108,6 +128,19 @@ const Detail = () => {
             </Link>
             <hr />
             <form onSubmit={handleDelete} style={{ display: "inline-flex" }}>
+=======
+            <a
+              href={`http://localhost:3003/products/update/${product.id}`}
+              className="btn btn-secondary btn-block mb-3"
+            >
+              EDITAR PRODUCTO
+            </a>
+            <form
+              action={`/products/delete/${product._id}`}
+              method="POST"
+              style={{ display: "inline-flex" }}
+            >
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
               <button type="submit" className="btn btn-danger btn-block">
                 ELIMINAR
               </button>
@@ -115,7 +148,20 @@ const Detail = () => {
           </article>
         </div>
       </div>
+<<<<<<< HEAD
  
+=======
+      {/*<div className="row">
+        <div className="col-md-6">
+          <h5>Number</h5>
+          <div className="d-flex">
+            <button className="btn btn-secondary">-</button>
+            <label className="mx-2">1</label>
+            <button className="btn btn-secondary">+</button>
+          </div>
+        </div>
+  </div>*/}
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
     </div>
 
   );

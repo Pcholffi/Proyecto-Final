@@ -4,12 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CardProduct = ({ product, cart, setCart }) => {
   const button = useRef();
+<<<<<<< HEAD
   if (product.image === ''){
     product.image = 'imgDefault.jpg'
   }
 
   const imageUrl = `http://localhost:3003/images/${product.image}`;
   //src={`http://localhost:3003/images/${product.image}`}
+=======
+  const imageUrl = `http://localhost:3003/images/${product.image}`;
+
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
   const addToCart = () => {
     const carNew = [
       ...cart,
@@ -40,7 +45,11 @@ const CardProduct = ({ product, cart, setCart }) => {
           className="btn btn-primary"
           ref={button}
         >
+<<<<<<< HEAD
           Agregar
+=======
+          A la Bolsa
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
         </button>
         <Link to={`/detail/${product._id}`} className="btn btn-secondary">
           Detalle

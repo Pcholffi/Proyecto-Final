@@ -15,7 +15,11 @@ const errorlogs = (error, req, res, next) => {
     const logsIn = `${currentDateTime} - la ruta ingresada es: ${req.originalUrl}\n`
     fs.appendFileSync(logsFilePath, logsIn, (error) => {
         if (error){
+<<<<<<< HEAD
             console.log("Error al registrar las URLs", (error));
+=======
+            console.log("Error al registrar las URLs", error);
+>>>>>>> 12dada15162aa758f13d4c81bf6e646fc8567005
         }
         //next();
     });// Registrar la URL solicitada en el archivo de rutas_logs o informa el error
